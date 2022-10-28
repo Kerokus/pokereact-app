@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #FCEEC8;
+
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+}
+
+/****
+Left-hand side list
+****/
+
+.left-content, .right-content {
+    flex-basis: 60%;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+    grid-gap: 2rem;
+    
+}
+
+.card {
+    width: 20rem;
+    background-color: #9EDEF9;
+    border-radius: 1rem;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.5);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+/****
+Right-hand side card
+****/
+
+.right-content {
+    width: 50%;
+    text-align: center;
+    color: black;
+    position: fixed;
+    top: 100px;
+    right: 10px;
+}
+
+.right-content img {
+    margin: 2rem;
+    height: 180px;
+}
+
+.right-content h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.abilities {
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.abilities .group {
+    background-color: #b74555;
+    color: white;
+    padding: .5rem;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.base-stat {
+    margin-top: 2rem;
+}
+
+
+/****
+Previous / Next buttons
+****/
+
+.btn-group {
+    display: flex;
+}
+
+.btn-group button {
+    outline: none;
+    border: none;
+    width: 150px;
+    padding: 0.3rem 0;
+    margin: 1rem;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    background-color: #b74555;
+    border-radius: 8px;
+}
+
+
+/****
+Navbar
+****/
+
+.nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    position: fixed;
+    width: 98%;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.site-title {
+    font-size: 2rem;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem
+}
+
+.nav li.active {
+    background-color: #555;
+
+}
+
+.nav li:hover {
+    background-color: #777;
+}
+
+/****
+Search page
+****/
+
+.displaysearch {
+    width: 100%;
+    align-items: center;
+    display: box;
+}
+
+.searchbox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchbox input {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: lowercase;
+    padding-left: 10px;
+}
+
+.searchbox button {
+    width: 170px;
+    height: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.searchbox button:hover {
+    cursor: pointer;
+}
+
+/****
+Search results
+****/
+
+.searchresults {
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchresults img {
+    height: 200px;
+}
